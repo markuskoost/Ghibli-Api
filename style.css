@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(245, 218, 241);
+}
+
 #root {
   max-width: 1200px;
   margin: 0 auto;
@@ -6,11 +10,25 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  border-top-left-radius: 14mm;
+  border-top-right-radius: 14mm;
+  background-image: linear-gradient(120deg, #ffc06e 0%, #ffa2d1 100%);
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .card {
   margin: 1rem;
-  border: 1px solid gray;
+  border: 0px;
+  border-radius: 14mm;
+  background-color: white;
 }
 
 @media screen and (min-width: 600px) {
@@ -24,3 +42,58 @@
     flex: 1 1 calc(33% - 2rem);
   }
 }
+
+html {
+  font-family: 'Dosis', sans-serif;
+}
+
+p {
+  padding: 0 2.5rem 2.5rem;
+  margin-top: 5px;
+}
+
+release {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+score {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+director {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footer-panel {
+  position: static;
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  max-width: 100%; }
+
+  .link1 {
+    margin-top: 90px;
+  }
+
+  img {
+    display: block;
+    margin: 1rem auto;
+  }
